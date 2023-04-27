@@ -1,0 +1,269 @@
+.page {
+    background-color: #F5F5F5;
+    width: 100vw;
+    height: 100%;
+}
+
+.preview {
+    display: flex;
+    gap: 3vw;
+    padding-top: 10vh;
+    padding-bottom: 20vh;
+    padding-inline: 5vw;
+}
+
+.rs {
+    display: flex;
+    flex-direction: column;
+}
+
+.rs .image-container img {
+    width: 60vw;
+    height: 80vh;
+    border-radius: 5px;
+}
+
+.detail-rs {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+.detail-top {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vh;
+}
+
+.judul-rs h1 {
+    font-family: 'source-bold';
+    color: #146C94;
+    font-size: 2rem;
+}
+
+.alamat-rs p {
+    font-family: 'source-regular';
+    font-size: 1.2rem;
+    color: #252525;
+}
+
+.daerah-rs h4 {
+    font-family: 'source-semi';
+    font-size: 1rem;
+}
+
+.no-telp p {
+    font-family: 'source-regular';
+    font-size: 1rem;
+    margin-top: 1vh;
+}
+
+.button-cek {
+    margin-top: 2vh;
+}
+
+.button-cek button {
+    font-family: 'source-regular';
+    font-size: 1rem;
+    background-color: #146C94;
+    border: 0;
+    border-radius: 5px;
+    width: fit-content;
+    padding-block: 1vh;
+    padding-inline: 1vw;
+    color: #F5F5F5;
+    cursor: pointer;
+}
+
+.button-cek button:hover {
+    background-color: #1a488e;
+}
+
+.button-cek button:active {
+    background-color: #146C94;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8vh;
+    width: 50vw;
+}
+
+.field h1 {
+    font-family: 'source-semi';
+    font-size: 1.4rem;
+    color: #146C94;
+}
+
+.field p {
+    font-family: 'source-regular';
+    font-size: 1rem;
+}
+
+.field ul li {
+    font-family: 'source-regular';
+    font-size: 1rem;
+    margin-left: 1.1vw;
+    list-style-type: square;
+}
+
+.extra {
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
+    margin-left: 3vw;
+}
+
+.suggestions {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+.judul-suggestions h1 {
+    font-family: 'source-semi';
+    font-size: 1.5rem;
+    color: #146C94;
+}
+
+.suggestions-grid {
+    display: grid;
+    grid-template-columns: repeat(1,20vw);
+    row-gap: 5vh;
+}
+
+.rs-cards {
+    width: 20vw;
+    border: 2px solid #146C94;
+    border-radius: 5px;
+}
+
+.rs-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vh;
+    margin-left: 0.4vw;
+    padding-bottom: 5vh;
+}
+
+.rs-cards h1 {
+    font-family: 'source-semi';
+    color: #146C94;
+    font-size: 1.5rem;
+}
+
+.rs-cards p {
+    font-family: 'source-regular';
+    font-size: 1rem;
+    color: #252525;
+}
+
+.rs-cards img {
+    width: 20vw;
+    border-bottom: 2px solid #146C94;
+}
+
+.rs-cards h4 {
+    font-family: 'source-semi';
+    /* margin-top: 1vh; */
+    font-size: 1.1rem;
+    color: #252525;
+}
+
+.rs-cards a button {
+    font-family: 'source-semi';
+    margin-top: 1vh;
+    font-size: 1rem;
+    width: fit-content;
+    padding-inline: 1vw;
+    padding-block: 0.7vh;
+    background-color: #146C94;
+    color: #F5F5F5;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.rs-cards a button:hover {
+    background-color: #1a488e;
+}
+
+.rs-cards a button:active {
+    background-color: #146C94;
+}
+
+/* Grid Dokter  */
+
+.dr-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+    column-gap: 7vw;
+    row-gap: 10vh;
+}
+
+.dr-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vh;
+    border: 2px solid #146C94;
+    border-radius: 5px;
+    width: 18vw;
+    padding-bottom: 5vh;
+}
+
+.dr-cards img {
+    width: 18vw;
+    height: 30vh;
+    border-bottom: 2px solid #146C94;
+}
+
+.dr-info {
+    display: flex;
+    flex-direction: column;
+    /* gap: 1vh; */
+    padding-left: 5px;
+}
+
+.dr-info h5 {
+    font-family: 'source-regular';
+    font-size: 1rem;
+    font-weight: 100;
+    color: #252525;
+}
+
+.dr-info h4 {
+    font-family: 'source-semi';
+    margin-top: 1vh;
+    font-size: 1.1rem;
+    color: #252525;
+}
+
+.dr-info h1 {
+    font-family: 'source-semi';
+    color: #146C94;
+    font-size: 1.3rem;
+}
+
+.dr-info p {
+    font-family: 'source-regular';
+    font-size: 0.9rem;
+    color: #252525;
+}
+
+.dr-info button {
+    font-family: 'source-semi';
+    font-size: 1rem;
+    width: fit-content;
+    margin-top: 2vh;
+    padding: 0.5vh 1vw;
+    background-color: #146C94;
+    color: #F5F5F5;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dr-info button:hover {
+    background-color: #1a488e;
+}

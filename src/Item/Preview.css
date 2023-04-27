@@ -1,0 +1,204 @@
+.page {
+    background-color: #F5F5F5;
+    width: 100vw;
+    height: 100%;
+}
+
+.preview {
+    display: flex;
+    gap: 3vw;
+    padding-top: 10vh;
+    padding-bottom: 20vh;
+    padding-inline: 5vw;
+}
+
+.preview .image-container img {
+    width: 30vw;
+    border-radius: 5px;
+}
+
+.detail-item {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+.detail-top {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.judul-item h1 {
+    font-family: 'source-bold';
+    color: #146C94;
+    font-size: 2rem;
+}
+
+.harga-item h4 {
+    font-family: 'source-semi';
+    font-size: 1.2rem;
+    color: #C58940;
+}
+
+.satuan-item {
+    font-family: 'source-regular';
+}
+
+.quantity-item {
+    display: flex;
+    gap: 0.5vw;
+    align-items: center;
+    margin-block: 1vh;
+}
+
+.quantity-item button {
+    border: 0;
+    background-color: transparent;
+    margin-top: 2px;
+    width: fit-content; 
+}
+
+.quantity-item button span {
+    font-size: 2rem;
+    color: #146C94;
+}
+
+.quantity-item button:hover span {
+    color: #1a488e;
+}
+
+.quantity-item button:active span {
+    color: #146C94;
+}
+
+.quantity-item p {
+    font-family: 'source-regular';
+    font-size: 1.3rem;
+    border: 1px solid #1a488e;
+    border-radius: 5px;
+    padding-inline: 1vw;
+}
+
+.button-cart button {
+    font-family: 'source-regular';
+    font-size: 1rem;
+    background-color: #146C94;
+    border: 0;
+    border-radius: 5px;
+    width: fit-content;
+    padding-block: 1vh;
+    padding-inline: 1vw;
+    color: #F5F5F5;
+    cursor: pointer;
+}
+
+.button-cart button:hover {
+    background-color: #1a488e;
+}
+
+.button-cart button:active {
+    background-color: #146C94;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8vh;
+    width: 30vw;
+}
+
+.field h1 {
+    font-family: 'source-semi';
+    font-size: 1.4rem;
+    color: #146C94;
+}
+
+.field p {
+    font-family: 'source-regular';
+    font-size: 1rem;
+}
+
+.extra {
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
+    margin-left: 3vw;
+}
+
+.suggestions {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+.judul-suggestions h1 {
+    font-family: 'source-semi';
+    font-size: 1.5rem;
+    color: #146C94;
+}
+
+.suggestions-grid {
+    display: grid;
+    grid-template-columns: repeat(1,20vw);
+    row-gap: 5vh;
+}
+
+.grid-cards {
+    width: 20vw;
+    border: 2px solid #146C94;
+    border-radius: 5px;
+}
+
+.item-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vh;
+    margin-left: 0.4vw;
+    padding-bottom: 5vh;
+}
+
+.grid-cards h1 {
+    font-family: 'source-semi';
+    color: #146C94;
+    font-size: 1.5rem;
+}
+
+.grid-cards p {
+    font-family: 'source-regular';
+    font-size: 1rem;
+    color: #252525;
+}
+
+.grid-cards img {
+    width: 20vw;
+    border-bottom: 2px solid #146C94;
+}
+
+.grid-cards h4 {
+    font-family: 'source-semi';
+    font-size: 1.1rem;
+    color: #252525;
+}
+
+.grid-cards a button {
+    font-family: 'source-semi';
+    margin-top: 1vh;
+    font-size: 1rem;
+    width: fit-content;
+    padding-inline: 1vw;
+    padding-block: 0.7vh;
+    background-color: #146C94;
+    color: #F5F5F5;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.grid-cards a button:hover {
+    background-color: #1a488e;
+}
+
+.grid-cards a button:active {
+    background-color: #146C94;
+}

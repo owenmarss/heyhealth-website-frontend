@@ -1,0 +1,20 @@
+@font-face {
+  font-family: 'source-bold';
+  src: url(../public/font/SourceSerif/SourceSerifPro-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'source-regular';
+  src: url(../public/font/SourceSerif/SourceSerifPro-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'source-semi';
+  src: url(../public/font/SourceSerif/SourceSerifPro-SemiBold.ttf);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+}

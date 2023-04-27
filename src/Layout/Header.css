@@ -1,0 +1,224 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #19376D;
+  padding-inline: 3vw;
+  /* padding-block: 2vh; */
+  height: 13vh;
+}
+
+header .left {
+  display: flex;
+  align-items: center;
+  gap: 5vw;
+}
+
+header .logo img {
+  width: 10vw;
+}
+
+header .navbar {
+  display: flex;
+  align-items: center;
+  /* gap: 5vw; */
+}
+
+header .menu {
+  font-family: 'source-bold';
+  font-size: 1.1rem;
+  position: relative;
+  /* font-weight: 900; */
+  /* background-color: aqua; */
+}
+
+header .menu a {
+  color: white;
+}
+
+header .dropdown {
+  padding: 12px 30px 30px 10px;
+  position: absolute;
+  border: 2px solid red;
+  border-radius: 2px;
+  opacity: 0;
+  visibility: hidden;
+  background-color: #2e9fd3;
+  transition: 0.5s; 
+  translate: 0 10px;
+  min-width: 250px;
+  text-align: start;
+}
+
+header .dropdown a {
+  border-bottom: 1px solid white;
+  padding-left: 1px;
+  padding-right: 20px;
+  padding-bottom: 1px;
+  color: white;
+  width: 120px;
+}
+
+/* Informasi Penyakit */
+
+header .menu .judul {
+  display: flex;
+  align-items: center;
+  border: 0;
+  color: white;
+  height: 13vh;
+  padding-inline: 1vw;
+  background-color: #19376D;
+}
+
+header .menu .judul div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5vh;
+  padding-inline: 1vw;
+  border-radius: 5px;
+}
+
+header .menu .penyakit-content {
+  display: grid;
+  grid-template-columns: repeat(4,15fr);
+  row-gap: 2.5vh;
+  column-gap: 2vw;
+}
+
+header .menu:hover .penyakit-content {
+  opacity: 1;
+  visibility: visible;
+  translate: 0;
+}
+
+header .menu .judul:hover div {
+  background-color: white;
+  color: #0e4066;
+}
+
+header .menu:hover img {
+  transform: rotate(180deg);
+  transition: 0.5s; 
+  color: #0e4066;
+}
+
+/* Obat & Suplemen */
+
+header .menu .item-content {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  gap: 2vh;
+  
+}
+
+header .menu:hover .item-content {
+  opacity: 1;
+  visibility: visible;
+  translate: 0;
+}
+
+header .menu .judul span {
+  transition: 0.5s; 
+}
+
+header .menu:hover .judul span {
+  transform: rotate(180deg);
+}  
+
+/* right */
+
+header .login-button button {
+  background-color: #2a7cc3;
+  color: white;
+  padding-block: 1vh;
+  padding-inline: 1vw;
+  font-family: 'source-bold';
+  font-size: 1.2rem;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+}
+
+header .login-button:hover button {
+  transform: scale(1.1);
+  text-decoration: underline;
+}
+
+header .login-button:active button {
+  transform: scale(1.2);
+  text-decoration: underline;
+}
+
+header #hamburger {
+  display: none;
+  color: white;
+}
+
+header #sideBarWrapper {
+  display: none;
+}
+
+@media (width <= 980px) {
+  header {
+    height: 8vh;
+    padding-inline: 5vw;
+  }
+
+  header #hamburger {
+    display: block;
+    font-size: 30px;
+  }
+
+  header .navbar {
+    display: none;
+  }
+
+  header .logo img {
+    width: 80px;
+  }
+
+  header .login-button button {
+    padding-block: 3px;
+    padding-inline: 2vw;
+  }
+
+  header #sideBarWrapper {
+    display: block;
+  }
+
+  header .sidebar {
+    width: 60vw;
+    background-color: #DDDDDD;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 0vh;
+    padding: 0vh 0vw 7vh 0vw;
+  }
+
+  header .sidebar div {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-bottom: 1px solid #DDDDDD;
+    height: 5vh;
+    width: 59.9vw;
+    padding-left: 3.5vw;
+  }
+
+  header .sidebar div span {
+    font-size: 1.3rem;
+    color: #19376D;
+  }
+
+  header .sidebar div a {
+    font-family: 'source-regular';
+    font-size: 1.3rem;
+    padding-left: 2vw;
+    color: #19376D;
+  }
+}

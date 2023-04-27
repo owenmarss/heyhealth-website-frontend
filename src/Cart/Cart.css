@@ -1,0 +1,166 @@
+.page {
+    background-color: #F5F5F5;
+    /* width: 100vw; */
+    height: 100%;
+}
+
+.content {
+    padding-top: 10vh;
+    padding-bottom: 20vh;
+    padding-inline: 5vw;
+}
+
+.cart-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+.judul-cart h1 {
+    font-family: 'source-bold';
+    font-size: 2.5rem;
+    color: #146C94;
+}
+
+.cart-grid {
+    display: grid;
+    grid-template-columns: repeat(1);
+    row-gap: 10vh;
+}
+
+.cart-cards {
+    display: flex;
+    gap: 2vw;
+    border: 2px solid #146C94;
+    border-radius: 5px;
+}
+
+.cart-cards img {
+    width: 25vw;
+    border-right: 2px solid #146C94;
+}
+
+.cart-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vh;
+    margin-top: 1vh;
+    width: 55vw;
+}
+
+.cart-info h1 {
+    font-family: 'source-semi';
+    font-size: 2rem;
+    color: #146C94;
+}
+
+.cart-info h5 {
+    font-family: 'source-regular';
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+.cart-info p {
+    font-family: 'source-regular';
+    font-size: 1rem;
+}
+
+.cart-info h4 {
+    font-family: 'source-semi';
+    font-size: 1.2rem;
+}
+
+.quantity-cart {
+    display: flex;
+}
+
+.quantity-cart {
+    display: flex;
+    gap: 0.5vw;
+    align-items: center;
+    margin-block: 1vh;
+}
+
+.quantity-cart button {
+    border: 0;
+    background-color: transparent;
+    margin-top: 2px;
+    width: fit-content; 
+    cursor: pointer;
+}
+
+.quantity-cart button span {
+    font-size: 2rem;
+    color: #146C94;
+}
+
+.quantity-cart button:hover span {
+    color: #1a488e;
+}
+
+.quantity-cart button:active span {
+    color: #146C94;
+}
+
+.quantity-cart p {
+    font-family: 'source-regular';
+    font-size: 1.3rem;
+    border: 1px solid #1a488e;
+    border-radius: 5px;
+    padding-inline: 1vw;
+}
+
+#delete {
+    margin-left: 2vw;
+}
+
+.checkmark {
+    margin-top: 15vh;
+}
+
+.total-cart {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5vh;
+    /* padding-inline: 1vw; */
+}
+
+.total-cart h1 {
+    font-family: 'source-bold';
+    font-size: 1.5rem;
+    color: #146C94;
+}
+
+.total-cart p {
+    font-family: 'source-semi';
+    font-size: 1.5rem;
+    color: #252525;
+}
+
+.checkout {
+    display: flex;
+    justify-content: right;
+    margin-top: 3vh;
+}
+
+.checkout button {
+    font-family: 'source-regular';
+    font-size: 1rem;
+    background-color: #146C94;
+    border: 0;
+    border-radius: 5px;
+    width: fit-content;
+    padding-block: 1vh;
+    padding-inline: 1vw;
+    color: #F5F5F5;
+    cursor: pointer;
+}
+
+.checkout button:hover {
+    background-color: #1a488e;
+}
+
+.checkout button:active {
+    background-color: #146C94;
+}

@@ -1,0 +1,364 @@
+
+body {
+    background-color: #F5F5F5;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 15vh;
+    padding-bottom: 35vh;
+    gap: 50vh;
+}
+
+.konten .content {
+    display: flex;
+    gap: 2vw;
+    height: 50vh;
+    /* padding-top: 4vh;
+    padding-bottom: 20vh; */
+    padding-inline: 3vw;
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(10%);
+    transition: 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translate(0);
+}
+
+.video video {
+    width: 50vw;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #252525;
+    /* border: 1px solid #252525; */
+}
+
+.isi {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    width: 42vw;
+    margin-top: 0.3vw;
+}
+
+.judul {
+    border-bottom: 1px solid #252525;
+    padding-bottom: 2px;
+}
+
+.judul h1 {
+    font-family: 'source-bold';
+    font-size: 2rem;
+    color: #19376D;
+    letter-spacing: 1.5px;
+}
+
+.deskripsi p {
+    font-family: 'source-regular';
+    font-size: 1.2rem;
+    color: #252525;
+    text-align: justify;
+}
+
+.penyakit {
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 5vh;
+    column-gap: 2vw;
+    margin-top: 4vh;
+    background-color: #FFFFFF;
+    padding-top: 2vh;
+    padding-bottom: 6vh;
+    padding-left: 0.8vw;
+    padding-right: 2vw;
+    /* border: 1px solid gray; */
+    border-radius: 3px;
+    /* box-shadow: 5px 5px 5px #252525; */
+}
+
+.penyakit a {
+    font-family: 'source-regular';
+    font-size: 0.8rem;
+    border-bottom: 1px solid #DDDDDD;
+    width: 7vw;
+    padding-bottom: 3px;
+    /* padding-left: 2vw; */
+    color: #252525;
+    display: flex;
+    align-items: center;
+    gap: 0.2vw;
+}
+
+.penyakit a span {
+    font-size: 0.8rem;
+}
+
+.penyakit a:hover {
+    color: #19A7CE;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5vh;
+    background-color: #FFFFFF;
+    width: 20vw;
+    margin-top: 8vh;
+    padding-top: 2vh;
+    padding-bottom: 4vh;
+    padding-left: 1vw;
+    /* border: 1px solid gray; */
+    border-radius: 3px;
+    /* box-shadow: 1px 1px 1px #252525; */
+}
+
+.item a {
+    font-family: 'source-regular';
+    font-size: 0.8rem;
+    color: #252525;
+    display: flex;
+    align-items: center;
+    gap: 0.2vw;
+    border-bottom: 1px solid #DDDDDD;
+    width: 6vw;
+}
+
+.item a:hover {
+    color: #19A7CE;
+}
+
+.item a span {
+    font-size: 0.8rem;
+}
+
+#info-penyakit {
+    transition-delay: 200ms;
+}
+
+#obat-suplemen {
+    transition-delay: 400ms;
+}
+
+#janji-medis {
+    transition-delay: 600ms;
+}
+
+@media (width <= 1024px) {
+    .container {
+        gap: 10vh;
+        padding-top: 10vh;
+        padding-bottom: 0;
+    }
+
+    .isi {
+        gap: 1.5vh;
+    }
+
+    .penyakit {
+        row-gap: 2vh;
+        padding-top: 1vh;
+        padding-bottom: 4vh;
+        margin-top: 2vh;
+    }
+
+    .judul h1 {
+        font-size: 1.5rem;
+    }
+
+    .deskripsi p {
+        font-size: 1rem;
+    }
+
+    .penyakit a:active {
+        color: #19A7CE;
+    }
+
+    .item {
+        gap: 1.5vh;
+        margin-top: 2vh;
+        padding-top: 1vh;
+        padding-bottom: 2vh;
+    }
+
+    .item a:active {
+        color: #19A7CE;
+    }
+}
+
+@media (width <= 762px) {
+    .container {
+        gap: 5vh;
+        padding-top: 10vh;
+        padding-bottom: 0;
+    }
+
+    .isi {
+        gap: 1vh;
+    }
+
+    .penyakit {
+        display: grid;
+        grid-template-columns: repeat(3,9vw);
+        row-gap: 1.5vh;
+        column-gap: 3vw;
+        margin-top: 2vh;
+        padding-top: 1vh;
+        padding-bottom: 2.5vh;
+        padding-left: 1.2vw;
+    }
+
+    .penyakit a {
+        width: 10vw;
+        font-size: 0.6rem;
+    }
+
+    .penyakit a:active {
+        color: #19A7CE;
+    }
+
+    .judul h1 {
+        font-size: 1.5rem;
+    }
+
+    .deskripsi p {
+        font-size: 0.8rem;
+    }
+
+    .item {
+        gap: 1vh;
+    }
+
+    .item a {
+        font-size: 0.6rem;
+    }
+
+    .item a:active {
+        color: #19A7CE;
+    }
+}
+
+@media (width <= 680px) {
+    .container {
+        gap: 1vh;
+        padding-top: 15vh;
+        padding-bottom: 0;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+        height: 80vh;
+        padding-inline: 0;
+        opacity: 0;
+        filter: blur(2px);
+        transform: translateY(10%);
+        transition: 1s;
+    }
+
+    .show {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0);
+    }
+
+    .video video {
+        width: 100%;
+    }
+
+    .isi {
+        align-items: center;
+        width: 100vw;
+        gap: 1vh;
+    }
+
+    .judul {
+        padding-bottom: 1px;
+    }
+
+    .judul h1 {
+        font-size: 1.3rem;
+    }
+
+    .deskripsi {
+        padding-inline: 5vw;
+    }
+
+    .deskripsi p {
+        text-align: center;
+        font-size: 0.7rem;
+    }
+
+    .penyakit {
+        grid-template-columns: repeat(5,9vw);
+        column-gap: 8vw;
+        padding-left: 2vw;
+        padding-right: 8vw;
+    }
+
+    .penyakit a {
+        width: 13vw;
+        font-size: 0.6rem;
+    }
+
+    .penyakit a span {
+        font-size: 0.6rem;
+    }
+
+    .penyakit a:active {
+        color: #19A7CE;
+    }
+
+    .item {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 15vw;
+        width: 70vw;
+        height: 1vh;
+        /* padding-top: 0.5vh;
+        padding-right: 10vw; */
+        padding-left: 5vw;
+        padding-bottom: 1.2vh;
+    }
+
+    .item a {
+        align-items: center;
+        width: 10vw;
+        padding-right: 2vw;
+        font-size: 0.6rem;
+        /* margin-inline: auto; */
+        /* padding: auto; */
+    }
+
+    .item a span {
+        font-size: 0.6rem;
+    }
+
+    .item a:active {
+        color: #19A7CE;
+    }
+
+    #obat-suplemen .isi {
+        order: 2;
+    }
+
+    #obat-suplemen .video {
+        order: 1;
+    }
+    
+    #info-penyakit {
+        transition-delay: 100ms;
+    }
+    
+    #obat-suplemen {
+        transition-delay: 200ms;
+    }
+    
+    #janji-medis {
+        transition-delay: 300ms;
+    }
+}
