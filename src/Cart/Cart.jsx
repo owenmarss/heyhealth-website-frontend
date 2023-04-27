@@ -1,8 +1,23 @@
-import './Cart.css'
+import axios from "axios";
+import "./Cart.css";
+import { useEffect } from "react";
 
 export default function Cart() {
+    async function getCart() {
+        const res = axios.get("http://localhost:8000/api/order/myorder/", {
+            headers: {
+                Authorization: "token " + localStorage.getItem("tokens"),
+            },
+        });
+        console.log(res);
+    }
+
+    useEffect(() => {
+        getCart();
+    }, []);
+
     return (
-        <section class="page">
+        <section class="page cart">
             <div class="content">
                 <div class="cart-container">
                     <div class="judul-cart">

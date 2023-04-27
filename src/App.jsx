@@ -9,6 +9,9 @@ import Penyakit from "./informasi/penyakit";
 import Item from "./Item/Item";
 import Preview from "./Item/Preview";
 import Janji from "./Janji/Janji";
+import Cart from "./Cart/Cart";
+import Login from "./Login/Login";
+import Register from "./Register/Register";
 
 function App() {
     const [ListItem, setListItem] = useState([]);
@@ -89,8 +92,11 @@ function App() {
                             />
                         }
                     />
+                    <Route path="cart" element={<Cart />} />
                     <Route path="janji" element={<Janji />} />
                 </Route>
+                <Route path="login" element={<Login />} />
+                <Route path="register" element={<Register />} />
             </Routes>
         </BrowserRouter>
     );
