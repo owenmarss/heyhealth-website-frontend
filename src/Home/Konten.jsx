@@ -14,7 +14,7 @@ export default function Konten() {
             });
         });
 
-        const hiddenElements = document.querySelectorAll(".konten .index-content");
+        const hiddenElements = document.querySelectorAll(".index-content");
         hiddenElements.forEach((el) => observer.observe(el));
 
         getListPenyakit()

@@ -1,0 +1,97 @@
+.profile-page {
+    padding-top: 10vh;
+    padding-bottom: 20vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
+    background-color: #F5F5F5;
+}
+
+.user {
+    display: flex;
+    justify-content: center;
+    gap: 20vh;
+    padding-inline: 5vw;
+}
+
+.user-avatar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-avatar span {
+    font-size: 20rem;
+    color: #252525;
+}
+
+.user-avatar h1 {
+    font-family: 'poppins-bold';
+    font-size: 2rem;
+    color: #146C94;
+}
+
+.user-data {
+    margin-top: 12vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.field-user input {
+    font-family: 'poppins-regular';
+    padding-left: 0.5vw;
+    padding-block: 1vh;
+    width: 20vw;
+}
+
+.janji-user {
+    padding-inline: 5vw;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+.janji-cards {
+    display: flex;
+    gap: 2vw;
+    border: 2px solid #146C94;
+    border-radius: 5px;
+    height: 31vh;
+}
+
+.janji-user .judul-janji {
+    font-family: 'poppins-bold';
+    font-size: 1.8rem;
+    color: #146C94;
+}
+
+.janji-image img {
+    width: 14vw;
+    height: 31vh;
+    border-right: 2px solid #146C94;
+}
+
+.janji-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vh;
+    margin-top: 1vh;
+}
+
+.janji-info h1 {
+    font-family: 'poppins-semi';
+    font-size: 2rem;
+    color: #146C94;
+}
+
+.janji-info p {
+    font-family: 'poppins-regular';
+    font-size: 1rem;
+}
+
+.janji-info h4 {
+    font-family: 'poppins-semi';
+    font-size: 1.2rem;
+}

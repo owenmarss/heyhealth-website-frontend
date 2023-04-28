@@ -12,6 +12,7 @@ import Janji from "./Janji/Janji";
 import Cart from "./Cart/Cart";
 import Login from "./Login/Login";
 import Register from "./Register/Register";
+import Profile from "./Profile/Profile";
 
 function App() {
     const [ListItem, setListItem] = useState([]);
@@ -94,6 +95,7 @@ function App() {
                     />
                     <Route path="cart" element={<Cart />} />
                     <Route path="janji" element={<Janji />} />
+                    <Route path="profile" element={<Profile />} />
                 </Route>
                 <Route path="login" element={<Login />} />
                 <Route path="register" element={<Register />} />
