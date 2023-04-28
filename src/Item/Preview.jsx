@@ -28,14 +28,47 @@ export default function Preview(props) {
             }
         }
         setOtherItem(temp);
-        console.log(temp);
+
+        const cart = JSON.parse(localStorage.getItem("cart"));
+        if (cart) {
+            for (let i = 0; i < cart.length; i++) {
+                if (cart[i].id === item.id) {
+                    setCounter(cart[i].quantity);
+                    break;
+                }
+            }
+        }
     }, [ListItem]);
+
+    function editCart() {
+        const newItem = { id: item.id, quantity: counter };
+        const cart = JSON.parse(localStorage.getItem("cart"));
+        console.log(cart);
+        if (cart) {
+            let ada_yang_sama = false;
+            for (let i = 0; i < cart.length; i++) {
+                if (cart[i].id === item.id) {
+                    ada_yang_sama = true;
+                    cart[i].quantity = counter;
+                    localStorage.setItem("cart", JSON.stringify(cart));
+                    break;
+                }
+            }
+            if (!ada_yang_sama) {
+                cart.push(newItem);
+                localStorage.setItem("cart", JSON.stringify(cart));
+            }
+        } else {
+            localStorage.setItem("cart", JSON.stringify([newItem]));
+        }
+        console.log(cart);
+    }
 
     return (
         <section class="page">
             <div class="preview">
                 <div class="image-container">
-                    <img src="../media/sick.jpg" alt="" />
+                    <img src={item.image} alt="" />
                 </div>
 
                 <div class="detail-item">
@@ -80,7 +113,10 @@ export default function Preview(props) {
                         </div>
 
                         <div class="button-cart">
-                            <button> Tambahkan ke Keranjang </button>
+                            <button onClick={editCart}>
+                                {" "}
+                                Tambahkan ke Keranjang{" "}
+                            </button>
                         </div>
                     </div>
 
@@ -107,15 +143,14 @@ export default function Preview(props) {
                         </div>
 
                         <div class="suggestions-grid">
-                            {console.log(OtherItem)}
                             {OtherItem.map((myItem = {}) => {
                                 return (
-                                    <div class="grid-cards">
+                                    <div key={myItem.id} class="grid-cards">
                                         <img src={myItem.image} alt="" />
                                         <div class="item-info">
                                             <h1> {myItem.nama} </h1>
                                             <p> {myItem.satuan} </p>
-                                            <h4> {myItem.harga} </h4>
+                                            <h4> {formatRupiah(myItem.harga)} </h4>
                                             <a href={"/item/" + myItem.nama}>
                                                 <button>
                                                     {" "}

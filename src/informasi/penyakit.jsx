@@ -4,17 +4,32 @@ import { useEffect, useState } from "react";
 
 export default function Penyakit(props) {
     const { ListPenyakit } = props;
-    const [penyakit, setPenyakit] = useState({})
-    const router = useParams()
+    const [penyakit, setPenyakit] = useState({});
+    const router = useParams();
 
-    useEffect(()=>{
+    useEffect(() => {}, [router, ListPenyakit]);
+
+    const [OtherPenyakit, setOtherPenyakit] = useState([]);
+    useEffect(() => {
+        let indexOfItem = 0;
         for (let i = 0; i < ListPenyakit.length; i++) {
-            if(ListPenyakit[i].nama === router.nama){
-                setPenyakit(ListPenyakit[i])
-                break
+            if (ListPenyakit[i].nama === router.nama) {
+                setPenyakit(ListPenyakit[i]);
+                indexOfItem = i;
+                break;
             }
         }
-    },[router, ListPenyakit])
+
+        const temp = [];
+        for (let i = 1; i <= 3; i++) {
+            if (indexOfItem + i < ListPenyakit.length) {
+                temp.push(ListPenyakit[indexOfItem + i]);
+            } else {
+                temp.push(ListPenyakit[indexOfItem + i - ListPenyakit.length]);
+            }
+        }
+        setOtherPenyakit(temp);
+    }, [ListPenyakit]);
 
     return (
         <section class="page-penyakit">
@@ -31,48 +46,45 @@ export default function Penyakit(props) {
                     <div id="deskripsi" class="field">
                         <h1> Apa itu {penyakit.nama}?</h1>
 
-                        <p>
-                            {penyakit.deskripsi}
-                        </p>
+                        <p>{penyakit.deskripsi}</p>
                     </div>
 
                     <div id="penyebab" class="field">
                         <h1> Penyebab {penyakit.nama} </h1>
 
-                        <p>
-                            {penyakit.penyebab}
-                        </p>
+                        <p>{penyakit.penyebab}</p>
                     </div>
 
                     <div id="gejala" class="field">
                         <h1> Gejala {penyakit.nama} </h1>
 
-                        <p>
-                            {penyakit.gejala}
-                        </p>
+                        <p>{penyakit.gejala}</p>
                     </div>
 
                     <div id="pencegahan" class="field">
                         <h1> Pencegahan {penyakit.nama} </h1>
 
-                        <p>
-                            {penyakit.pencegahan}
-                        </p>
+                        <p>{penyakit.pencegahan}</p>
                     </div>
 
                     <div id="penanganan" class="field">
                         <h1> Penanganan {penyakit.nama} </h1>
 
-                        <p>
-                            {penyakit.pengobatan}
-                        </p>
+                        <p>{penyakit.pengobatan}</p>
                     </div>
                 </div>
 
                 <div class="extra">
                     <div class="ad">
                         <a href="">
-                            <video src="./media/ad.mp4" autoPlay={true} loop={true} muted={true}> </video>
+                            <video
+                                src="./media/ad.mp4"
+                                autoPlay={true}
+                                loop={true}
+                                muted={true}
+                            >
+                                {" "}
+                            </video>
                         </a>
                     </div>
 
@@ -82,26 +94,16 @@ export default function Penyakit(props) {
                         </div>
 
                         <div class="suggestions-grid">
-                            <div class="grid-cards">
-                                <a href="">
-                                    <img src="./media/sick.jpg" alt="" />
-                                    Penyakit Lain 1
-                                </a>
-                            </div>
-
-                            <div class="grid-cards">
-                                <a href="">
-                                    <img src="./media/sick.jpg" alt="" />
-                                    Penyakit Lain 1
-                                </a>
-                            </div>
-
-                            <div class="grid-cards">
-                                <a href="">
-                                    <img src="./media/sick.jpg" alt="" />
-                                    Penyakit Lain 1
-                                </a>
-                            </div>
+                            {OtherPenyakit.map((penyakit={}) => {
+                                return (
+                                    <div key={penyakit.id} class="grid-cards">
+                                        <a href={"/penyakit/" + penyakit.nama}>
+                                            <img src={penyakit.image} alt="" />
+                                            {penyakit.nama}
+                                        </a>
+                                    </div>
+                                );
+                            })}
                         </div>
                     </div>
                 </div>

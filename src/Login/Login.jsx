@@ -14,7 +14,6 @@ export default function Login() {
             localStorage.setItem("tokens", res.data.tokens);
             window.location.href = "/";
         }
-        console.log(res);
     }
     return (
         <section class="login-page">

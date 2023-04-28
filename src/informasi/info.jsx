@@ -7,7 +7,7 @@ export default function Info(props) {
     const [listPenyakitAbjad, setListPenyakitAbjad] = useState([])
     useEffect(()=>{
         const temp = []
-        for (let i = 5; i < ListPenyakit.length+5; i+=10) {
+        for (let i = 5; i < ListPenyakit.length+5; i+=5) {
             temp.push(ListPenyakit.slice(i-5, i))
         }
         setListPenyakitAbjad(temp)

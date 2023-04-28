@@ -84,22 +84,29 @@ export default function Header(props) {
                 </div>
 
                 <div class="right">
-                    <a href="" class="cart-button">
-                        <span class="material-symbols-outlined">
-                            shopping_cart
-                        </span>
-                    </a>
-
-                    <a href="" class="login-button">
-                        <button> Login </button>
-                    </a>
+                    {localStorage.getItem("tokens") ? (
+                        <>
+                            <a href="" class="cart-button">
+                                <span class="material-symbols-outlined">
+                                    shopping_cart
+                                </span>
+                            </a>
+                            <span class="material-symbols-outlined">
+                                account_circle
+                            </span>
+                        </>
+                    ) : (
+                        <a href="" class="login-button">
+                            <button> Login </button>
+                        </a>
+                    )}
                 </div>
             </header>
 
             <div id="sideBarWrapper">
                 <div
                     className="sidebar"
-                    style={{ display: isOpen ? "flex" : "none" }}
+                    style={{ display: isOpen ? "block" : "none" }}
                 >
                     <div>
                         <span class="material-symbols-outlined">home</span>

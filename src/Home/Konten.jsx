@@ -54,7 +54,7 @@ export default function Konten() {
 
                     <div class="konten-penyakit">
                         {ListPenyakit.map((penyakit)=>{
-                           return <a href="">{penyakit.nama}</a>
+                           return <a key={penyakit.id} href={"/penyakit/"+penyakit.nama}>{penyakit.nama}</a>
                         })}
 
                         <a href="">

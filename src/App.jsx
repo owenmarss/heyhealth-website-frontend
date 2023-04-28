@@ -93,7 +93,7 @@ function App() {
                             />
                         }
                     />
-                    <Route path="cart" element={<Cart />} />
+                    <Route path="cart" element={<Cart formatRupiah={formatRupiah} ListItem={ListItem} />} />
                     <Route path="janji" element={<Janji />} />
                     <Route path="profile" element={<Profile />} />
                 </Route>
