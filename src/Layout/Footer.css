@@ -1,37 +1,22 @@
-@font-face {
-    font-family: 'source-regular';
-    src: url(../../public/font/SourceSerif/SourceSerifPro-Regular.ttf);
-}
-
-@font-face {
-    font-family: 'source-semi';
-    src: url(../../public/font/SourceSerif/SourceSerifPro-SemiBold.ttf);
-}
-
 footer .top {
     display: grid;
     grid-template-columns: repeat(4,18.3vw);
-    column-gap: 6vw;
-    /* display: flex;
     justify-content: space-between;
-    gap: 12vw; */
     padding-top: 2.5vh;
     padding-bottom: 6vh;
     padding-left: 4vw;
     padding-right: 8vw;
     background-color: #ecf5ff;
-    /* background-color: red; */
 }
 
 footer .content {
     display: flex;
     flex-direction: column;
     gap: 2vh;
-    /* background-color: red; */
 }
 
 footer .judul h1 {
-    font-family: 'source-semi';
+    font-family: 'poppins-semi';
     font-size: 1.3rem;
     color: #146C94;
     font-weight: 900;
@@ -44,16 +29,18 @@ footer .link {
 }
 
 footer .link a {
-    font-family: 'source-regular';
+    font-family: 'poppins-regular';
     color: #146C94;
-    font-size: 1rem;
+    font-size: 0.8rem;
+    width: 20vw;
 }
 
 footer .link p {
-    font-family: 'source-regular';
+    font-family: 'poppins-regular';
     color: #146C94;
-    font-size: 1rem;
+    font-size: 0.8rem;
     cursor: pointer;
+    width: 20vw;
 }
 
 footer .link a:hover {
@@ -66,7 +53,7 @@ footer .link p:hover {
 
 footer .logo-footer img {
     width: 14vw;
-    margin-top: 4vh;
+    margin-top: 6vh;
 }
 
 footer #app {
@@ -111,8 +98,8 @@ footer .bottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: 'source-regular';
-    font-size: 1.1rem;
+    font-family: 'poppins-regular';
+    font-size: 0.8rem;
     background-color: #252525;
     padding-inline: 1.5vw;
     height: 8vh;

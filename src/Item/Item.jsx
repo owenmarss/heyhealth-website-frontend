@@ -58,7 +58,7 @@ export default function Item(props) {
         // qwihud</>
         <section class="item-page">
             <div className="content">
-                <div class="search-box">
+                <div class="item-search-box">
                     <select
                         defaultChecked={"0"}
                         onChange={search}

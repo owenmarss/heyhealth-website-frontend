@@ -4,7 +4,7 @@
     height: 100%;
 }
 
-.content {
+.janji-content {
     margin-inline: 4vw;
     display: flex;
     flex-direction: column;
@@ -20,7 +20,7 @@
 }
 
 .jenis-input {
-    font-family: 'source-regular';
+    font-family: 'poppins-regular';
     height: 6.5vh;
     font-size: 1rem;
     padding-left: 0.5vw;
@@ -29,7 +29,7 @@
 }
 
 .input-field input {
-    font-family: 'source-regular';
+    font-family: 'poppins-regular';
     width: 60vw;
     height: 6.5vh;
     padding-left: 0.7vw;
@@ -44,7 +44,7 @@
     align-items: center;
     margin-left: 1vw;
     gap: 0.2vw;
-    font-family: 'source-bold';
+    font-family: 'poppins-bold';
     font-size: 1rem;
     width: 8vw;
     height: 6.5vh;
@@ -74,7 +74,7 @@
 }
 
 .rs-judul h1 {
-    font-family: 'source-bold';
+    font-family: 'poppins-bold';
     font-size: 2rem;
     color: #146C94;
     /* margin-bottom: 2vh; */
@@ -111,26 +111,26 @@
 }
 
 .rs-info h4 {
-    font-family: 'source-semi';
+    font-family: 'poppins-semi';
     /* margin-top: 1vh; */
     font-size: 1.1rem;
     color: #252525;
 }
 
 .rs-info h1 {
-    font-family: 'source-semi';
+    font-family: 'poppins-semi';
     font-size: 1.5rem;
     color: #146C94;
 }
 
 .rs-info p {
-    font-family: 'source-regular';
+    font-family: 'poppins-regular';
     font-size: 1rem;
     color: #252525;
 }
 
 .rs-info button {
-    font-family: 'source-semi';
+    font-family: 'poppins-semi';
     font-size: 1rem;
     width: fit-content;
     margin-top: 2vh;
@@ -155,7 +155,7 @@
 }
 
 .dr-judul h1 {
-    font-family: 'source-bold';
+    font-family: 'poppins-bold';
     font-size: 2rem;
     color: #146C94;
     /* margin-bottom: 2vh; */
@@ -192,33 +192,33 @@
 }
 
 .dr-info h5 {
-    font-family: 'source-regular';
+    font-family: 'poppins-regular';
     font-size: 1rem;
     font-weight: 100;
     color: #252525;
 }
 
 .dr-info h4 {
-    font-family: 'source-semi';
+    font-family: 'poppins-semi';
     margin-top: 1vh;
     font-size: 1.1rem;
     color: #252525;
 }
 
 .dr-info h1 {
-    font-family: 'source-semi';
+    font-family: 'poppins-semi';
     color: #146C94;
     font-size: 1.5rem;
 }
 
 .dr-info p {
-    font-family: 'source-regular';
+    font-family: 'poppins-regular';
     font-size: 0.9rem;
     color: #252525;
 }
 
 .dr-info button {
-    font-family: 'source-semi';
+    font-family: 'poppins-semi';
     font-size: 1rem;
     width: fit-content;
     margin-top: 2vh;

@@ -40,7 +40,7 @@ export default function Header(props) {
                         <div class="menu">
                             <a href="" class="judul">
                                 <div>
-                                    Informasi Kesehatan
+                                    Informasi Penyakit
                                     <span class="material-symbols-outlined">
                                         expand_more
                                     </span>
@@ -84,6 +84,12 @@ export default function Header(props) {
                 </div>
 
                 <div class="right">
+                    <a href="" class="cart-button">
+                        <span class="material-symbols-outlined">
+                            shopping_cart
+                        </span>
+                    </a>
+
                     <a href="" class="login-button">
                         <button> Login </button>
                     </a>

@@ -17,7 +17,7 @@ export default function Penyakit(props) {
     },[router, ListPenyakit])
 
     return (
-        <section class="page penyakit">
+        <section class="page-penyakit">
             <div class="penyakit">
                 <div class="detail">
                     <div class="judul">
@@ -72,12 +72,7 @@ export default function Penyakit(props) {
                 <div class="extra">
                     <div class="ad">
                         <a href="">
-                            <video
-                                src="./media/ad.mp4"
-                                autoplay
-                                loop
-                                muted
-                            ></video>
+                            <video src="./media/ad.mp4" autoPlay={true} loop={true} muted={true}> </video>
                         </a>
                     </div>
 

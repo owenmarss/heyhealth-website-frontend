@@ -52,7 +52,7 @@ export default function Konten() {
                         </p>
                     </div>
 
-                    <div class="penyakit">
+                    <div class="konten-penyakit">
                         {ListPenyakit.map((penyakit)=>{
                            return <a href="">{penyakit.nama}</a>
                         })}

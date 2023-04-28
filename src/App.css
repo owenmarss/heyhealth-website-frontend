@@ -1,16 +1,16 @@
 @font-face {
-  font-family: 'source-bold';
-  src: url(../public/font/SourceSerif/SourceSerifPro-Bold.ttf);
+  font-family: 'poppins-regular';
+  src: url(../public/font/Poppins/Poppins-Regular.otf);
 }
 
 @font-face {
-  font-family: 'source-regular';
-  src: url(../public/font/SourceSerif/SourceSerifPro-Regular.ttf);
+  font-family: 'poppins-semi';
+  src: url(../public/font/Poppins/Poppins-SemiBold.otf);
 }
 
 @font-face {
-  font-family: 'source-semi';
-  src: url(../public/font/SourceSerif/SourceSerifPro-SemiBold.ttf);
+  font-family: 'poppins-bold';
+  src: url(../public/font/Poppins/Poppins-Bold.otf);
 }
 
 * {

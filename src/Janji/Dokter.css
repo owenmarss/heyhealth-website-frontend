@@ -33,24 +33,24 @@
 }
 
 .judul-dr h1 {
-    font-family: 'source-bold';
+    font-family: 'poppins-bold';
     color: #146C94;
     font-size: 2rem;
 }
 
 .bidang-dr p {
-    font-family: 'source-regular';
+    font-family: 'poppins-regular';
     font-size: 1.2rem;
     color: #252525;
 }
 
 .usia-dr p {
-    font-family: 'source-regular';
+    font-family: 'poppins-regular';
     font-size: 1rem;
 }
 
 .daerah-dr h4 {
-    font-family: 'source-semi';
+    font-family: 'poppins-semi';
     font-size: 1rem;
     margin-top: 1vh;
 }
@@ -60,7 +60,7 @@
 }
 
 .button-janji button {
-    font-family: 'source-regular';
+    font-family: 'poppins-regular';
     font-size: 1rem;
     background-color: #146C94;
     border: 0;
@@ -88,18 +88,18 @@
 }
 
 .field h1 {
-    font-family: 'source-semi';
+    font-family: 'poppins-semi';
     font-size: 1.4rem;
     color: #146C94;
 }
 
 .field p {
-    font-family: 'source-regular';
+    font-family: 'poppins-regular';
     font-size: 1rem;
 }
 
 .field ul li {
-    font-family: 'source-regular';
+    font-family: 'poppins-regular';
     font-size: 1rem;
     margin-left: 1.1vw;
     list-style-type: square;
@@ -117,7 +117,7 @@
 }
 
 .input-field h1 {
-    font-family: 'source-regular';
+    font-family: 'poppins-regular';
     font-size: 1rem;
     font-weight: 100;
     color: #252525;
@@ -126,7 +126,7 @@
 }
 
 .input-field input {
-    font-family: 'source-regular';
+    font-family: 'poppins-regular';
     border: 1px solid #146C94;
     border-radius: 3px;
 }
@@ -163,7 +163,7 @@
 }
 
 .judul-suggestions h1 {
-    font-family: 'source-semi';
+    font-family: 'poppins-semi';
     font-size: 1.5rem;
     color: #146C94;
 }
@@ -189,13 +189,13 @@
 }
 
 .dr-cards h1 {
-    font-family: 'source-semi';
+    font-family: 'poppins-semi';
     color: #146C94;
     font-size: 1.5rem;
 }
 
 .dr-cards p {
-    font-family: 'source-regular';
+    font-family: 'poppins-regular';
     font-size: 1rem;
     color: #252525;
 }
@@ -207,14 +207,14 @@
 }
 
 .dr-cards h4 {
-    font-family: 'source-semi';
+    font-family: 'poppins-semi';
     /* margin-top: 1vh; */
     font-size: 1.1rem;
     color: #252525;
 }
 
 .dr-cards a button {
-    font-family: 'source-semi';
+    font-family: 'poppins-semi';
     margin-top: 1vh;
     font-size: 1rem;
     width: fit-content;

@@ -37,7 +37,7 @@
 }
 
 .logo-register h5 {
-    font-family: 'source-regular';
+    font-family: 'poppins-regular';
     font-size: 1.7rem;
     word-spacing: 1.5px;
     font-weight: 100;
@@ -46,14 +46,14 @@
 }
 
 .logo-register h5 .slogan {
-    font-family: 'source-bold';
+    font-family: 'poppins-bold';
     color: #146C94;
     font-size: 2rem;
     letter-spacing: 1.5px;
 }
 
 .logo-register h5 .hey {
-    font-family: 'source-bold';
+    font-family: 'poppins-bold';
     color: #146C94;
     display: flex;
 }
@@ -64,7 +64,7 @@
 }
 
 .logo-register h5 .titik {
-    font-family: 'source-regular';
+    font-family: 'poppins-regular';
     color: #252525;
 }
 
@@ -83,7 +83,7 @@ form {
 }
 
 .judul-register h1 {
-    font-family: 'source-bold';
+    font-family: 'poppins-bold';
     font-size: 2rem;
     color: #1a488e;
     letter-spacing: 1.5px;
@@ -97,7 +97,7 @@ form {
 }
 
 .input {
-    font-family: 'source-regular';
+    font-family: 'poppins-regular';
     width: 20vw;
     height: 5vh;
     padding-left: 0.4vw;
@@ -121,7 +121,7 @@ form {
 }
 
 .button {
-    font-family: 'source-bold';
+    font-family: 'poppins-bold';
     font-size: 1.2rem;
     width: 20.6vw;
     height: 6vh;
@@ -139,7 +139,7 @@ form {
 }
 
 .signup {
-    font-family: 'source-regular';
+    font-family: 'poppins-regular';
     font-size: 0.9rem;
     margin-top: 1vh;
 }

@@ -1,4 +1,3 @@
-
 body {
     background-color: #F5F5F5;
 }
@@ -51,20 +50,20 @@ body {
 }
 
 .judul-konten h1 {
-    font-family: 'source-bold';
+    font-family: 'poppins-bold';
     font-size: 2rem;
     color: #19376D;
     letter-spacing: 1.5px;
 }
 
 .deskripsi p {
-    font-family: 'source-regular';
+    font-family: 'poppins-regular';
     font-size: 1.2rem;
     color: #252525;
     text-align: justify;
 }
 
-.penyakit {
+.konten-penyakit {
     display: grid !important;
     grid-template-columns: repeat(4, 1fr);
     row-gap: 5vh;
@@ -80,8 +79,8 @@ body {
     /* box-shadow: 5px 5px 5px #252525; */
 }
 
-.penyakit a {
-    font-family: 'source-regular';
+.konten-penyakit a {
+    font-family: 'poppins-regular';
     font-size: 0.8rem;
     border-bottom: 1px solid #DDDDDD;
     width: 7vw;
@@ -93,11 +92,11 @@ body {
     gap: 0.2vw;
 }
 
-.penyakit a span {
+.konten-penyakit a span {
     font-size: 0.8rem;
 }
 
-.penyakit a:hover {
+.konten-penyakit a:hover {
     color: #19A7CE;
 }
 
@@ -117,7 +116,7 @@ body {
 }
 
 .item a {
-    font-family: 'source-regular';
+    font-family: 'poppins-regular';
     font-size: 0.8rem;
     color: #252525;
     display: flex;
@@ -135,7 +134,7 @@ body {
     font-size: 0.8rem;
 }
 
-#info-penyakit {
+#info-konten-.konten-penyakit {
     transition-delay: 200ms;
 }
 
@@ -158,7 +157,7 @@ body {
         gap: 1.5vh;
     }
 
-    .penyakit {
+    .konten-penyakit {
         row-gap: 2vh;
         padding-top: 1vh;
         padding-bottom: 4vh;
@@ -173,7 +172,7 @@ body {
         font-size: 1rem;
     }
 
-    .penyakit a:active {
+    .konten-penyakit a:active {
         color: #19A7CE;
     }
 
@@ -200,7 +199,7 @@ body {
         gap: 1vh;
     }
 
-    .penyakit {
+    .konten-penyakit {
         display: grid;
         grid-template-columns: repeat(3,9vw);
         row-gap: 1.5vh;
@@ -211,12 +210,12 @@ body {
         padding-left: 1.2vw;
     }
 
-    .penyakit a {
+    .konten-penyakit a {
         width: 10vw;
         font-size: 0.6rem;
     }
 
-    .penyakit a:active {
+    .konten-penyakit a:active {
         color: #19A7CE;
     }
 
@@ -292,23 +291,23 @@ body {
         font-size: 0.7rem;
     }
 
-    .penyakit {
+    .konten-penyakit {
         grid-template-columns: repeat(5,9vw);
         column-gap: 8vw;
         padding-left: 2vw;
         padding-right: 8vw;
     }
 
-    .penyakit a {
+    .konten-penyakit a {
         width: 13vw;
         font-size: 0.6rem;
     }
 
-    .penyakit a span {
+    .konten-penyakit a span {
         font-size: 0.6rem;
     }
 
-    .penyakit a:active {
+    .konten-penyakit a:active {
         color: #19A7CE;
     }
 
@@ -350,7 +349,7 @@ body {
         order: 1;
     }
     
-    #info-penyakit {
+    #info-konten-.konten-penyakit {
         transition-delay: 100ms;
     }
     

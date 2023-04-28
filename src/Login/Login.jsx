@@ -39,7 +39,7 @@ export default function Login() {
                 </div>
 
                 <div class="form-container">
-                    <div class="judul">
+                    <div class="login-judul">
                         <h1> Login </h1>
                     </div>
 

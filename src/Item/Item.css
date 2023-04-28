@@ -11,7 +11,7 @@
     gap: 15vh;
 }
 
-.search-box {
+.item-search-box {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -20,7 +20,7 @@
 }
 
 .jenis-input {
-    font-family: 'source-regular';
+    font-family: 'poppins-regular';
     height: 6.5vh;
     font-size: 1rem;
     padding-left: 0.5vw;
@@ -29,7 +29,7 @@
 }
 
 .input-field input {
-    font-family: 'source-regular';
+    font-family: 'poppins-regular';
     width: 60vw;
     height: 6.5vh;
     padding-left: 0.7vw;
@@ -44,7 +44,7 @@
     align-items: center;
     margin-left: 1vw;
     gap: 0.2vw;
-    font-family: 'source-bold';
+    font-family: 'poppins-bold';
     font-size: 1rem;
     width: 8vw;
     height: 6.5vh;
@@ -71,10 +71,11 @@
     display: flex;
     flex-direction: column;
     gap: 3vh;
+    padding-bottom: 20vh;
 }
 
 .item-result-judul h1 {
-    font-family: 'source-bold';
+    font-family: 'poppins-bold';
     font-size: 2rem;
     color: #146C94;
     /* margin-bottom: 2vh; */
@@ -83,7 +84,7 @@
 .item-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
-    column-gap: 7vw;
+    column-gap: 4vw;
     row-gap: 10vh;
 }
 
@@ -91,14 +92,14 @@
     display: flex;
     flex-direction: column;
     gap: 0.5vh;
-    border: 2px solid #146C94;
-    border-radius: 5px;
-    width: 25vw;
-    padding-bottom: 5vh;
+    border: 1.5px solid #146C94;
+    border-radius: 3px;
+    width: 20vw;
+    padding-bottom: 2vh;
 }
 
 .item-cards img {
-    width: 25vw;
+    width: 20vw;
     height: 40vh;
     border-bottom: 2px solid #146C94;
 }
@@ -107,29 +108,30 @@
     display: flex;
     flex-direction: column;
     /* gap: 1vh; */
-    padding-left: 5px;
+    padding-left: 3px;
 }
 
 .item-info h4 {
-    font-family: 'source-semi';
+    font-family: 'poppins-semi';
     margin-top: 1vh;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     color: #252525;
 }
 
 .item-info h1 {
-    font-family: 'source-semi';
+    font-family: 'poppins-semi';
     color: #146C94;
+    font-size: 1.3rem;
 }
 
 .item-info p {
-    font-family: 'source-regular';
+    font-family: 'poppins-regular';
     font-size: 1rem;
     color: #252525;
 }
 
 .item-info button {
-    font-family: 'source-semi';
+    font-family: 'poppins-semi';
     font-size: 1rem;
     width: fit-content;
     margin-top: 2vh;

@@ -17,7 +17,7 @@
 }
 
 .cart .judul-cart h1 {
-    font-family: 'source-bold';
+    font-family: 'poppins-bold';
     font-size: 2.5rem;
     color: #146C94;
 }
@@ -49,24 +49,24 @@
 }
 
 .cart .cart-info h1 {
-    font-family: 'source-semi';
+    font-family: 'poppins-semi';
     font-size: 2rem;
     color: #146C94;
 }
 
 .cart .cart-info h5 {
-    font-family: 'source-regular';
+    font-family: 'poppins-regular';
     font-size: 1rem;
     font-weight: 100;
 }
 
 .cart .cart-info p {
-    font-family: 'source-regular';
+    font-family: 'poppins-regular';
     font-size: 1rem;
 }
 
 .cart .cart-info h4 {
-    font-family: 'source-semi';
+    font-family: 'poppins-semi';
     font-size: 1.2rem;
 }
 
@@ -103,7 +103,7 @@
 }
 
 .cart .quantity-cart p {
-    font-family: 'source-regular';
+    font-family: 'poppins-regular';
     font-size: 1.3rem;
     border: 1px solid #1a488e;
     border-radius: 5px;
@@ -127,13 +127,13 @@
 }
 
 .cart .total-cart h1 {
-    font-family: 'source-bold';
+    font-family: 'poppins-bold';
     font-size: 1.5rem;
     color: #146C94;
 }
 
 .cart .total-cart p {
-    font-family: 'source-semi';
+    font-family: 'poppins-semi';
     font-size: 1.5rem;
     color: #252525;
 }
@@ -145,7 +145,7 @@
 }
 
 .cart .checkout button {
-    font-family: 'source-regular';
+    font-family: 'poppins-regular';
     font-size: 1rem;
     background-color: #146C94;
     border: 0;

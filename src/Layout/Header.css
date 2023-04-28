@@ -5,7 +5,7 @@ header {
   background-color: #19376D;
   padding-inline: 3vw;
   /* padding-block: 2vh; */
-  height: 13vh;
+  height: 16vh;
 }
 
 header .left {
@@ -25,7 +25,7 @@ header .navbar {
 }
 
 header .menu {
-  font-family: 'source-bold';
+  font-family: 'poppins-bold';
   font-size: 1.1rem;
   position: relative;
   /* font-weight: 900; */
@@ -39,11 +39,11 @@ header .menu a {
 header .dropdown {
   padding: 12px 30px 30px 10px;
   position: absolute;
-  border: 2px solid red;
-  border-radius: 2px;
+  /* border: 2px solid red; */
+  border-radius: 5px;
   opacity: 0;
   visibility: hidden;
-  background-color: #2e9fd3;
+  background-color: #FFFFFF;
   transition: 0.5s; 
   translate: 0 10px;
   min-width: 250px;
@@ -51,12 +51,17 @@ header .dropdown {
 }
 
 header .dropdown a {
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #2a7cc3;
   padding-left: 1px;
   padding-right: 20px;
   padding-bottom: 1px;
-  color: white;
+  color: #146C94;
   width: 120px;
+  font-family: 'poppins-semi';
+}
+
+header .dropdown a:hover{
+  color: #248ce6;
 }
 
 /* Informasi Penyakit */
@@ -66,7 +71,7 @@ header .menu .judul {
   align-items: center;
   border: 0;
   color: white;
-  height: 13vh;
+  height: 16vh;
   padding-inline: 1vw;
   background-color: #19376D;
 }
@@ -130,12 +135,27 @@ header .menu:hover .judul span {
 
 /* right */
 
+header .right {
+  display: flex;
+  align-items: center;
+  gap: 3vw;
+}
+
+header .cart-button span {
+  /* background-color: #2a7cc3; */
+  color: #FFFFFF;
+  border-radius: 5px;
+  padding-block: 0.5vh;
+  /* padding-inline: 1vw; */
+  font-size: 2.2rem;
+}
+
 header .login-button button {
   background-color: #2a7cc3;
   color: white;
   padding-block: 1vh;
   padding-inline: 1vw;
-  font-family: 'source-bold';
+  font-family: 'poppins-bold';
   font-size: 1.2rem;
   border: 0;
   border-radius: 5px;
@@ -216,7 +236,7 @@ header #sideBarWrapper {
   }
 
   header .sidebar div a {
-    font-family: 'source-regular';
+    font-family: 'poppins-regular';
     font-size: 1.3rem;
     padding-left: 2vw;
     color: #19376D;
