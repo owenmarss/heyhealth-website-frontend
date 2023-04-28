@@ -13,6 +13,7 @@ import Cart from "./Cart/Cart";
 import Login from "./Login/Login";
 import Register from "./Register/Register";
 import Profile from "./Profile/Profile";
+import Dokter from "./Janji/Dokter";
 
 function App() {
     const [ListItem, setListItem] = useState([]);
@@ -96,6 +97,7 @@ function App() {
                     <Route path="cart" element={<Cart formatRupiah={formatRupiah} ListItem={ListItem} />} />
                     <Route path="janji" element={<Janji />} />
                     <Route path="profile" element={<Profile />} />
+                    <Route path="janji/:rs/:dokter" element={<Dokter />} />
                 </Route>
                 <Route path="login" element={<Login />} />
                 <Route path="register" element={<Register />} />

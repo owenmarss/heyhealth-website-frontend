@@ -149,6 +149,18 @@
     padding-left: 0.4vw;
 }
 
+.input-button button {
+    font-family: 'poppins-bold';
+    font-size: 1rem;
+    background-color: #146C94;
+    border: 0;
+    border-radius: 5px;
+    padding-block: 1vh;
+    color: #FFFFFF;
+    padding-inline: 1vw;
+    display: flex;
+}
+
 .extra {
     display: flex;
     flex-direction: column;

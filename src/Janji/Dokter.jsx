@@ -75,6 +75,10 @@ export default function Dokter() {
                                 <h1> Keluhan: </h1>
                                 <input type="text" name="" id=""/>
                             </div>
+
+                            <div id='send' className='input-button'>
+                                <button> Submit </button>
+                            </div>
                         </form>
                     </div>
                 </div>
