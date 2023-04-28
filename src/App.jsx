@@ -14,9 +14,16 @@ import Login from "./Login/Login";
 import Register from "./Register/Register";
 import Profile from "./Profile/Profile";
 import Dokter from "./Janji/Dokter";
+import Rs from "./Janji/Rs";
+import Checkout from "./Cart/Checkout";
 
 function App() {
     const [ListItem, setListItem] = useState([]);
+    const [janji, setJanji] = useState([]);
+    const [rs, setRS] = useState([]);
+    const [ListPenyakit, setListPenyakit] = useState([]);
+    const [ListDokter, setListDokter] = useState([]);
+
     async function getAllItems() {
         const response = await axios
             .get("http://localhost:8000/api/item/")
@@ -24,15 +31,6 @@ function App() {
             .catch((error) => error);
         setListItem(response.data);
     }
-    useEffect(() => {
-        getAllItems();
-    }, []);
-
-    const [ListPenyakit, setListPenyakit] = useState([]);
-    useEffect(() => {
-        getListPenyakit();
-    }, []);
-
     async function getListPenyakit() {
         const response = await axios
             .get("http://localhost:8000/api/penyakit/")
@@ -59,6 +57,43 @@ function App() {
         rupiah = split[1] !== undefined ? rupiah + "," + split[1] : rupiah;
         return "Rp. " + rupiah + ",00";
     }
+
+    async function getRS() {
+        const res = await axios
+            .get("http://localhost:8000/api/rumah_sakit/")
+            .then((res) => res)
+            .catch((error) => error);
+        setRS(res.data);
+    }
+
+    async function getJanji() {
+        const token = localStorage.getItem("tokens");
+        const res = await axios
+            .get("http://localhost:8000/api/janji/myjanji/", {
+                headers: {
+                    Authorization: `Token ${token}`,
+                },
+            })
+            .then((res) => res)
+            .catch((error) => error);
+        setJanji(res.data);
+    }
+
+    async function getDokter() {
+        const res = await axios
+            .get("http://localhost:8000/api/dokter/")
+            .then((res) => res)
+            .catch((error) => error);
+        setListDokter(res.data);
+    }
+
+    useEffect(() => {
+        getAllItems();
+        getListPenyakit();
+        getJanji();
+        getRS();
+        getDokter();
+    }, []);
 
     return (
         <BrowserRouter>
@@ -94,10 +129,35 @@ function App() {
                             />
                         }
                     />
-                    <Route path="cart" element={<Cart formatRupiah={formatRupiah} ListItem={ListItem} />} />
-                    <Route path="janji" element={<Janji />} />
+                    <Route
+                        path="cart"
+                        element={
+                            <Cart
+                                formatRupiah={formatRupiah}
+                                ListItem={ListItem}
+                            />
+                        }
+                    />
+                    <Route path="janji" element={<Janji rs={rs} />} />
+                    <Route
+                        path="rs/:nama"
+                        element={<Rs rs={rs} ListDokter={ListDokter} />}
+                    />
+
                     <Route path="profile" element={<Profile />} />
-                    <Route path="janji/:rs/:dokter" element={<Dokter />} />
+                    <Route
+                        path="janji/:dokter"
+                        element={<Dokter ListDokter={ListDokter} />}
+                    />
+                    <Route
+                        path="checkout"
+                        element={
+                            <Checkout
+                                formatRupiah={formatRupiah}
+                                ListItem={ListItem}
+                            />
+                        }
+                    />
                 </Route>
                 <Route path="login" element={<Login />} />
                 <Route path="register" element={<Register />} />

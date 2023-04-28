@@ -2,7 +2,7 @@ import axios from "axios";
 import "./Cart.css";
 import { useEffect, useState } from "react";
 
-function CartSatuan({ c = {}, setCart, index, init }) {
+function CartSatuan({ c = {}, setCart, index, init, formatRupiah }) {
     const [counter, setCounter] = useState(c.quantity);
 
     function plusItem() {
@@ -43,12 +43,12 @@ function CartSatuan({ c = {}, setCart, index, init }) {
 
     return (
         <div key={c.id} class="cart-cards">
-            <img src="../media/sick.jpg" alt="" />
+            <img src={c.image} alt="" />
             <div class="cart-info">
                 <h1> {c.nama} </h1>
                 <h5> {c.jenis} </h5>
                 <p> {c.satuan} </p>
-                <h4> {c.harga} </h4>
+                <h4> {formatRupiah(c.harga)} </h4>
                 <div class="quantity-cart">
                     <button id="minus" onClick={minusItem}>
                         <span class="material-symbols-outlined">
@@ -114,6 +114,7 @@ export default function Cart({ ListItem, formatRupiah }) {
                         {cart.map((c = {}, index) => {
                             return (
                                 <CartSatuan
+                                    formatRupiah={formatRupiah}
                                     init={init}
                                     c={c}
                                     index={index}

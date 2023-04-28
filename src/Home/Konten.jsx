@@ -17,24 +17,30 @@ export default function Konten() {
         const hiddenElements = document.querySelectorAll(".index-content");
         hiddenElements.forEach((el) => observer.observe(el));
 
-        getListPenyakit()
+        getListPenyakit();
     }, []);
 
-    const [
-        ListPenyakit, setListPenyakit
-    ]=useState([])
+    const [ListPenyakit, setListPenyakit] = useState([]);
 
     async function getListPenyakit() {
-        const response = await axios.get('http://localhost:8000/api/penyakit/').then(response=>response).catch(error=>error)
-        const temp = response.data.slice(0, 10)
-        setListPenyakit(temp)
+        const response = await axios
+            .get("http://localhost:8000/api/penyakit/")
+            .then((response) => response)
+            .catch((error) => error);
+        const temp = response.data.slice(0, 10);
+        setListPenyakit(temp);
     }
 
     return (
         <div class="container konten">
             <section id="info-penyakit" class="index-content">
                 <div class="video">
-                    <video src='./media/virus.mp4' autoPlay={true} loop={true} muted={true}/>
+                    <video
+                        src="./media/virus.mp4"
+                        autoPlay={true}
+                        loop={true}
+                        muted={true}
+                    />
                 </div>
 
                 <div class="isi">
@@ -53,8 +59,15 @@ export default function Konten() {
                     </div>
 
                     <div class="konten-penyakit">
-                        {ListPenyakit.map((penyakit)=>{
-                           return <a key={penyakit.id} href={"/penyakit/"+penyakit.nama}>{penyakit.nama}</a>
+                        {ListPenyakit.map((penyakit) => {
+                            return (
+                                <a
+                                    key={penyakit.id}
+                                    href={"/penyakit/" + penyakit.nama}
+                                >
+                                    {penyakit.nama}
+                                </a>
+                            );
                         })}
 
                         <a href="">
@@ -97,7 +110,12 @@ export default function Konten() {
                 </div>
 
                 <div class="video">
-                    <video src="./media/medicine.mp4" autoPlay={true} loop={true} muted={true}>
+                    <video
+                        src="./media/medicine.mp4"
+                        autoPlay={true}
+                        loop={true}
+                        muted={true}
+                    >
                         {" "}
                     </video>
                 </div>
@@ -105,7 +123,12 @@ export default function Konten() {
 
             <section id="janji-medis" class="index-content">
                 <div class="video">
-                    <video src="./media/doctor.mp4" autoPlay={true} loop={true} muted={true}>
+                    <video
+                        src="./media/doctor.mp4"
+                        autoPlay={true}
+                        loop={true}
+                        muted={true}
+                    >
                         {" "}
                     </video>
                 </div>
