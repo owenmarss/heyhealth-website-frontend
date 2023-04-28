@@ -159,6 +159,11 @@
     color: #FFFFFF;
     padding-inline: 1vw;
     display: flex;
+    cursor: pointer;
+}
+
+.input-button button:hover {
+    background-color: #1a488e;
 }
 
 .extra {
