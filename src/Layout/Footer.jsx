@@ -44,9 +44,9 @@ export default function Footer() {
                 </div>
 
                 <div class="gambar">
-                    <img src="./media/1.png" alt="" id="play-store"/>
+                    <img src="media/1.png" alt="" id="play-store"/>
     
-                    <img src="./media/2.png" alt="" id="app-store"/>
+                    <img src="media/2.png" alt="" id="app-store"/>
                 </div>
             </div>
         </section>

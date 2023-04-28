@@ -203,3 +203,29 @@
 .grid-cards a button:active {
     background-color: #146C94;
 }
+
+.popup-box {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    width: 41vw;
+    padding-top: 1vh;
+    padding-bottom: 5vh;
+    padding-inline: 2vw;
+}
+
+.popup-top {
+    display: flex;
+    justify-content: right;
+    background-color: red;
+
+}
+
+.popup-comment {
+    background-color: grey;
+    padding-inline: 1vw;
+    padding-top: 1vh;
+    padding-bottom: 3vh;
+}

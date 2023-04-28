@@ -165,6 +165,21 @@ export default function Preview(props) {
                     </div>
                 </div>
             </div>
+
+            <div className="popup-box">
+                <div className="popup-top">
+                    <button>
+                        <span class="material-symbols-outlined">
+                            close
+                        </span>
+                    </button>
+                </div>
+
+                <div className="popup-comment">
+                    <h1> Berhasil Menambahkan Item ke Keranjang </h1>
+                    <a href=""> Cek Keranjang Sekarang </a>
+                </div>
+            </div>
         </section>
     );
 }
