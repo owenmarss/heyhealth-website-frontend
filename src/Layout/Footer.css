@@ -64,7 +64,7 @@ footer .link p:hover {
     text-decoration: underline;
 }
 
-footer .logo img {
+footer .logo-footer img {
     width: 14vw;
     margin-top: 4vh;
 }
@@ -127,7 +127,7 @@ footer .right p {
 }
 
 @media (width <= 1024px) {
-    footer .logo img {
+    footer .logo-footer img {
         width: 18vw;
         margin-top: 2vh;
     }
@@ -142,7 +142,7 @@ footer .right p {
         /* padding-right: 25vw; */
     }
 
-    footer .logo img {
+    footer .logo-footer img {
         margin-top: 2.5vh;
         width: 20vw;
     }
@@ -178,7 +178,7 @@ footer .right p {
         padding-bottom: 4vh;
     }
 
-    footer .logo img {
+    footer .logo-footer img {
         width: 25vw;
     }
 
@@ -201,7 +201,7 @@ footer .right p {
 }
 
 @media (width <= 450px) {
-    footer .logo img {
+    footer .logo-footer img {
         width: 30vw;
     }
 

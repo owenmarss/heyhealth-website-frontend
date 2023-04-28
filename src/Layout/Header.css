@@ -14,7 +14,7 @@ header .left {
   gap: 5vw;
 }
 
-header .logo img {
+header .logo-header img {
   width: 10vw;
 }
 
@@ -177,7 +177,7 @@ header #sideBarWrapper {
     display: none;
   }
 
-  header .logo img {
+  header .logo-header img {
     width: 80px;
   }
 

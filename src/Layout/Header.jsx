@@ -26,7 +26,7 @@ export default function Header(props) {
                 </span>
 
                 <div class="left">
-                    <div className="logo">
+                    <div className="logo-header">
                         <img src="/media/logoputih.png" alt="" />
                     </div>
 

@@ -14,8 +14,8 @@ export default function Info(props) {
     },[ListPenyakit])
 
     return (
-        <section class="page">
-            <div class="top">
+        <section class="info-page">
+            <div class="top-info">
                 <div class="search-box">
                     <input type="search" name="" id="" class="search" />
                     <button>
@@ -24,8 +24,8 @@ export default function Info(props) {
                     </button>
                 </div>
 
-                <div class="result">
-                    <div class="result-headline">
+                <div class="info-result">
+                    <div class="info-result-headline">
                         <h1> Search From Alphabet </h1>
                     </div>
 

@@ -56,7 +56,7 @@ export default function Item(props) {
     return (
         // <>
         // qwihud</>
-        <section class="page">
+        <section class="item-page">
             <div className="content">
                 <div class="search-box">
                     <select
@@ -96,8 +96,8 @@ export default function Item(props) {
                     </div>
                 </div>
 
-                <div class="result">
-                    <div class="result-judul">
+                <div class="item-result">
+                    <div class="item-result-judul">
                         <h1> {list_jenis[parseInt(jenis)].text} </h1>
                     </div>
 

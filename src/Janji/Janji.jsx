@@ -2,7 +2,7 @@ import './Janji.css'
 
 export default function Janji() {
     return (
-        <section class="page">
+        <section class="janji-page">
         <div class="content">
             <div class="search-box">
                 <select name="jenis" id="jenis" class="jenis-input">

@@ -17,9 +17,9 @@ export default function Login() {
         console.log(res);
     }
     return (
-        <section class="page">
+        <section class="login-page">
             <div class="login">
-                <div class="logo">
+                <div class="logo-login">
                     <img src="../media/logo.png" alt="" />
                     <h5>
                         Say

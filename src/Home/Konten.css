@@ -11,7 +11,7 @@ body {
     gap: 50vh;
 }
 
-.konten .content {
+.konten .index-content {
     display: flex;
     gap: 2vw;
     height: 50vh;
@@ -45,12 +45,12 @@ body {
     margin-top: 0.3vw;
 }
 
-.judul {
+.judul-konten {
     border-bottom: 1px solid #252525;
     padding-bottom: 2px;
 }
 
-.judul h1 {
+.judul-konten h1 {
     font-family: 'source-bold';
     font-size: 2rem;
     color: #19376D;
@@ -165,7 +165,7 @@ body {
         margin-top: 2vh;
     }
 
-    .judul h1 {
+    .judul-konten h1 {
         font-size: 1.5rem;
     }
 
@@ -220,7 +220,7 @@ body {
         color: #19A7CE;
     }
 
-    .judul h1 {
+    .judul-konten h1 {
         font-size: 1.5rem;
     }
 
@@ -275,11 +275,11 @@ body {
         gap: 1vh;
     }
 
-    .judul {
+    .judul-konten {
         padding-bottom: 1px;
     }
 
-    .judul h1 {
+    .judul-konten h1 {
         font-size: 1.3rem;
     }
 

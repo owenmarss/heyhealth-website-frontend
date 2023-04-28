@@ -4,7 +4,7 @@ export default function Footer() {
     return (
         <footer>
         <section class="top">
-            <div class="logo">
+            <div class="logo-footer">
                 <a href="../index/konten.html">
                     <img src="../media/logo.png" alt=""/>
                 </a>

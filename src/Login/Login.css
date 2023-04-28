@@ -1,4 +1,4 @@
-.page {
+.login-page {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -21,7 +21,7 @@
     border-radius: 10px;
 }
 
-.logo {
+.logo-login {
     display: flex;
     flex-direction: column;
     gap: 5vh;
@@ -31,11 +31,11 @@
     padding-right: 7vw;
 }
 
-.logo img {
+.logo-login img {
     width: 20vw;
 }
 
-.logo h5 {
+.logo-login h5 {
     font-family: 'source-regular';
     font-size: 1.7rem;
     word-spacing: 1.5px;
@@ -44,25 +44,25 @@
     color: #252525;
 }
 
-.logo h5 .slogan {
+.logo-login h5 .slogan {
     font-family: 'source-bold';
     color: #146C94;
     font-size: 2rem;
     letter-spacing: 1.5px;
 }
 
-.logo h5 .hey {
+.logo-login h5 .hey {
     font-family: 'source-bold';
     color: #146C94;
     display: flex;
 }
 
-.logo h5 .health {
+.logo-login h5 .health {
     color: #19A7CE;
     display: flex;
 }
 
-.logo h5 .titik {
+.logo-login h5 .titik {
     font-family: 'source-regular';
     color: #252525;
 }
@@ -146,16 +146,16 @@ form {
 }
 
 @media (width <=1100px) {
-    .logo {
+    .logo-login {
         gap: 4vh;
         padding-right: 5vw;
     }
 
-    .logo h5 {
+    .logo-login h5 {
         font-size: 1.4rem;
     }
 
-    .logo h5 .slogan {
+    .logo-login h5 .slogan {
         font-size: 1.8rem;
     }
 
@@ -203,7 +203,7 @@ form {
         margin-top: 14vh;
     }
 
-    .logo {
+    .logo-login {
         /* display: none; */
         order: 1;
         border: 0;
@@ -215,11 +215,11 @@ form {
         padding-left: 5vw;
     }
 
-    .logo img {
+    .logo-login img {
         width: 16vw;
     }
 
-    .logo h5 {
+    .logo-login h5 {
         /* background-color: red; */
         display: none;
         width: 60vw;

@@ -29,9 +29,9 @@ export default function Register() {
         }
     }
     return (
-        <section class="page">
+        <section class="register-page">
             <div class="register">
-                <div class="logo">
+                <div class="logo-register">
                     <img src="../media/logo.png" alt="" />
                     <h5>
                         Say
@@ -51,7 +51,7 @@ export default function Register() {
                 </div>
 
                 <div class="form-container">
-                    <div class="judul">
+                    <div class="judul-register">
                         <h1> Register </h1>
                     </div>
 

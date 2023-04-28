@@ -1,4 +1,4 @@
-.page {
+.register-page {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -21,7 +21,7 @@
     border-radius: 10px;
 }
 
-.logo {
+.logo-register {
     display: flex;
     flex-direction: column;
     gap: 5vh;
@@ -32,11 +32,11 @@
     padding-right: 7vw;
 }
 
-.logo img {
+.logo-register img {
     width: 20vw;
 }
 
-.logo h5 {
+.logo-register h5 {
     font-family: 'source-regular';
     font-size: 1.7rem;
     word-spacing: 1.5px;
@@ -45,25 +45,25 @@
     color: #252525;
 }
 
-.logo h5 .slogan {
+.logo-register h5 .slogan {
     font-family: 'source-bold';
     color: #146C94;
     font-size: 2rem;
     letter-spacing: 1.5px;
 }
 
-.logo h5 .hey {
+.logo-register h5 .hey {
     font-family: 'source-bold';
     color: #146C94;
     display: flex;
 }
 
-.logo h5 .health {
+.logo-register h5 .health {
     color: #19A7CE;
     display: flex;
 }
 
-.logo h5 .titik {
+.logo-register h5 .titik {
     font-family: 'source-regular';
     color: #252525;
 }
@@ -82,7 +82,7 @@ form {
     gap: 2vh;
 }
 
-.judul h1 {
+.judul-register h1 {
     font-family: 'source-bold';
     font-size: 2rem;
     color: #1a488e;
@@ -153,16 +153,16 @@ form {
 }
 
 @media (width <=1100px) {
-    .logo {
+    .logo-register {
         gap: 4vh;
         padding-right: 5vw;
     }
 
-    .logo h5 {
+    .logo-register h5 {
         font-size: 1.4rem;
     }
 
-    .logo h5 .slogan {
+    .logo-register h5 .slogan {
         font-size: 1.8rem;
     }
 
@@ -218,7 +218,7 @@ form {
         margin-top: 7.5vh;
     }
 
-    .logo {
+    .logo-register {
         /* display: none; */
         order: 1;
         border: 0;
@@ -231,11 +231,11 @@ form {
         padding-left: 5vw;
     }
 
-    .logo img {
+    .logo-register img {
         width: 16vw;
     }
 
-    .logo h5 {
+    .logo-register h5 {
         /* background-color: red; */
         display: none;
         width: 60vw;
@@ -256,7 +256,7 @@ form {
         /* align-items: center; */
     }
 
-    .judul h1 {
+    .judul-register h1 {
         font-size: 2.5rem;
         letter-spacing: 1px;
     }

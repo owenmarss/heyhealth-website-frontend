@@ -14,7 +14,7 @@ export default function Konten() {
             });
         });
 
-        const hiddenElements = document.querySelectorAll(".konten .content");
+        const hiddenElements = document.querySelectorAll(".konten .index-content");
         hiddenElements.forEach((el) => observer.observe(el));
 
         getListPenyakit()
@@ -32,13 +32,13 @@ export default function Konten() {
 
     return (
         <div class="container konten">
-            <section id="info-penyakit" class="content">
+            <section id="info-penyakit" class="index-content">
                 <div class="video">
                     <video src='./media/virus.mp4' autoPlay={true} loop={true} muted={true}/>
                 </div>
 
                 <div class="isi">
-                    <div class="judul">
+                    <div class="judul-konten">
                         <h1> Informasi Penyakit </h1>
                     </div>
 
@@ -67,9 +67,9 @@ export default function Konten() {
                 </div>
             </section>
 
-            <section id="obat-suplemen" class="content">
+            <section id="obat-suplemen" class="index-content">
                 <div class="isi">
-                    <div class="judul">
+                    <div class="judul-konten">
                         <h1> Obat & Suplemen </h1>
                     </div>
 
@@ -97,21 +97,21 @@ export default function Konten() {
                 </div>
 
                 <div class="video">
-                    <video src="./media/medicine.mp4" autoplay loop muted>
+                    <video src="./media/medicine.mp4" autoPlay={true} loop={true} muted={true}>
                         {" "}
                     </video>
                 </div>
             </section>
 
-            <section id="janji-medis" class="content">
+            <section id="janji-medis" class="index-content">
                 <div class="video">
-                    <video src="./media/doctor.mp4" autoplay loop muted>
+                    <video src="./media/doctor.mp4" autoPlay={true} loop={true} muted={true}>
                         {" "}
                     </video>
                 </div>
 
                 <div class="isi">
-                    <div class="judul">
+                    <div class="judul-konten">
                         <h1> Janji Medis </h1>
                     </div>
 

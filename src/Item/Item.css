@@ -1,4 +1,4 @@
-.page {
+.item-page {
     background-color: #F5F5F5;
     width: 100vw;
     height: 100%;
@@ -67,13 +67,13 @@
     transform: scale(1.1);
 }
 
-.result {
+.item-result {
     display: flex;
     flex-direction: column;
     gap: 3vh;
 }
 
-.result-judul h1 {
+.item-result-judul h1 {
     font-family: 'source-bold';
     font-size: 2rem;
     color: #146C94;
