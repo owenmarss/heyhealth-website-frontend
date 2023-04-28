@@ -161,6 +161,10 @@
     display: flex;
 }
 
+.input-button button:hover {
+    background-color: #1a488e;
+}
+
 .extra {
     display: flex;
     flex-direction: column;
