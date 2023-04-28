@@ -3,6 +3,8 @@ import "./Preview.css";
 import { useEffect, useState } from "react";
 
 export default function Preview(props) {
+    const [show_notif, setShow_notif] = useState(false);
+
     const { ListItem, formatRupiah } = props;
     const router = useParams();
     const [item, setItem] = useState({});
@@ -61,7 +63,7 @@ export default function Preview(props) {
         } else {
             localStorage.setItem("cart", JSON.stringify([newItem]));
         }
-        console.log(cart);
+        setShow_notif(true);
     }
 
     return (
@@ -150,7 +152,12 @@ export default function Preview(props) {
                                         <div class="item-info">
                                             <h1> {myItem.nama} </h1>
                                             <p> {myItem.satuan} </p>
-                                            <h4> {formatRupiah(myItem.harga)} </h4>
+                                            <h4>
+                                                {" "}
+                                                {formatRupiah(
+                                                    myItem.harga
+                                                )}{" "}
+                                            </h4>
                                             <a href={"/item/" + myItem.nama}>
                                                 <button>
                                                     {" "}
@@ -166,12 +173,13 @@ export default function Preview(props) {
                 </div>
             </div>
 
-            <div className="popup-box">
+            <div
+                className="popup-box"
+                style={{ display: show_notif ? "flex" : "none" }}
+            >
                 <div className="popup-top">
-                    <button>
-                        <span class="material-symbols-outlined">
-                            close
-                        </span>
+                    <button onClick={() => setShow_notif(false)}>
+                        <span class="material-symbols-outlined">close</span>
                     </button>
                 </div>
 
