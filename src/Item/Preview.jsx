@@ -122,32 +122,32 @@ export default function Preview(props) {
                         </div>
                     </div>
 
-                    <div id="deskripsi" class="field">
+                    <div id="deskripsi" class="preview-field">
                         <h1> Deskripsi </h1>
                         <p>{item.deskripsi}</p>
                     </div>
 
-                    <div id="khasiat" class="field">
+                    <div id="khasiat" class="preview-field">
                         <h1> Khasiat </h1>
                         <p>{item.khasiat}</p>
                     </div>
 
-                    <div id="dosis" class="field">
+                    <div id="dosis" class="preview-field">
                         <h1> Dosis </h1>
                         <p>{item.dosis}</p>
                     </div>
                 </div>
 
                 <div class="extra">
-                    <div class="suggestions">
-                        <div class="judul-suggestions">
+                    <div class="preview-suggestions">
+                        <div class="judul-preview-suggestions">
                             <h1> Penyakit Lainnya </h1>
                         </div>
 
-                        <div class="suggestions-grid">
+                        <div class="preview-suggestions-grid">
                             {OtherItem.map((myItem = {}) => {
                                 return (
-                                    <div key={myItem.id} class="grid-cards">
+                                    <div key={myItem.id} class="preview-grid-cards">
                                         <img src={myItem.image} alt="" />
                                         <div class="item-info">
                                             <h1> {myItem.nama} </h1>

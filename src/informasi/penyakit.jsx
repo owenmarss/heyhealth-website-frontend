@@ -78,7 +78,7 @@ export default function Penyakit(props) {
                     <div class="ad">
                         <a href="">
                             <video
-                                src="./media/ad.mp4"
+                                src="/media/ad.mp4"
                                 autoPlay={true}
                                 loop={true}
                                 muted={true}

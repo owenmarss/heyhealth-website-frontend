@@ -50,11 +50,7 @@ export default function Konten() {
 
                     <div class="deskripsi">
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Porro maiores aliquid consequuntur perferendis
-                            consectetur, sed laborum, rerum nobis tempore modi
-                            debitis eaque ab voluptatibus amet similique quod.
-                            Soluta, non aspernatur.
+                            HeyHealth menyediakan berbagai jenis informasi seputar penyakit yang dapat anda akses mendapatkan informasi yang terupdate seputar penyakit yang memberikan informasi penyakit detail seperti gejala, penyebab, pencegahan, dan pengobatan yang dapat ditelusuri website kami.
                         </p>
                     </div>
 
@@ -88,11 +84,7 @@ export default function Konten() {
 
                     <div class="deskripsi">
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Porro maiores aliquid consequuntur perferendis
-                            consectetur, sed laborum, rerum nobis tempore modi
-                            debitis eaque ab voluptatibus amet similique quod.
-                            Soluta, non aspernatur.
+                            HeyHealth menyediakan berbagai jenis obat dan suplemen untuk mengobati penyakit yang diderita dan juga suplemen untuk meningkatkan kesehatan seseorang seperti meningkatkan imunitas pada virus dan dapat dibeli diwebsite kami ini.
                         </p>
                     </div>
 
@@ -140,11 +132,7 @@ export default function Konten() {
 
                     <div class="deskripsi">
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Porro maiores aliquid consequuntur perferendis
-                            consectetur, sed laborum, rerum nobis tempore modi
-                            debitis eaque ab voluptatibus amet similique quod.
-                            Soluta, non aspernatur.
+                            HeyHealth menyediakan fitur janji medis seperti janji temu pada dokter dokter terpilih yang kalian inginkan juga mereka semua dari pilihan rumah sakit terbaik yang ada masing masing daerahnya.
                         </p>
                     </div>
                 </div>

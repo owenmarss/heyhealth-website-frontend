@@ -37,7 +37,7 @@ export default function Login() {
                     </h5>
                 </div>
 
-                <div class="form-container">
+                <div class="login-form-container">
                     <div class="login-judul">
                         <h1> Login </h1>
                     </div>

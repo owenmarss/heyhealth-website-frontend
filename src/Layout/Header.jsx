@@ -91,7 +91,7 @@ export default function Header(props) {
                                     shopping_cart
                                 </span>
                             </a>
-                            <span class="material-symbols-outlined">
+                            <span id="account-profile" class="material-symbols-outlined">
                                 account_circle
                             </span>
                         </>

@@ -46,7 +46,7 @@ export default function Dokter({ ListDokter = [] }) {
 
     return (
         <section class="page">
-            <div class="preview">
+            <div class="preview-dokter">
                 <div class="image-container">
                     <a href="">
                         <img src="../media/dr.jpg" alt="" />
@@ -131,12 +131,12 @@ export default function Dokter({ ListDokter = [] }) {
                 </div>
 
                 <div class="extra">
-                    <div class="suggestions">
-                        <div class="judul-suggestions">
+                    <div class="dokter-suggestions">
+                        <div class="judul-dokter-suggestions">
                             <h1> Penyakit Lainnya </h1>
                         </div>
 
-                        <div class="suggestions-grid">
+                        <div class="dokter-suggestions-grid">
                             <div class="dr-cards">
                                 <img src="../media/dr.jpg" alt="" />
                                 <div class="dr-info">

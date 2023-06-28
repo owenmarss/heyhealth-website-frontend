@@ -4,7 +4,7 @@
     height: 100%;
 }
 
-.preview {
+.preview-dokter {
     display: flex;
     gap: 3vw;
     padding-top: 10vh;
@@ -173,19 +173,19 @@
     margin-left: 3vw;
 }
 
-.suggestions {
+.dokter-suggestions {
     display: flex;
     flex-direction: column;
     gap: 3vh;
 }
 
-.judul-suggestions h1 {
+.judul-dokter-suggestions h1 {
     font-family: 'poppins-semi';
     font-size: 1.5rem;
     color: #146C94;
 }
 
-.suggestions-grid {
+.dokter-suggestions-grid {
     display: grid;
     grid-template-columns: repeat(1,20vw);
     row-gap: 5vh;

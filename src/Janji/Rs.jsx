@@ -30,10 +30,10 @@ export default function Rs({ rs, ListDokter = [] }) {
 
     return (
         <section class="page">
-            <div class="preview">
+            <div class="preview-rs">
                 <div class="rs">
                     <div class="image-container">
-                        <img src="../media/rs.jpg" alt="" />
+                        <img src={rs_now.image} alt="" />
                     </div>
 
                     <div class="detail-rs">
@@ -58,12 +58,12 @@ export default function Rs({ rs, ListDokter = [] }) {
                             </div>
                         </div>
 
-                        <div id="deskripsi" class="field">
+                        <div id="deskripsi" class="field-rs">
                             <h1> Deskripsi </h1>
                             <p>{rs_now.deskripsi}</p>
                         </div>
 
-                        <div id="fasilitas" class="field">
+                        <div id="fasilitas" class="field-rs">
                             <h1> Fasilitas </h1>
                             <p>{rs_now.fasilitas}</p>
                             {/* <ul>
@@ -75,7 +75,7 @@ export default function Rs({ rs, ListDokter = [] }) {
                             </ul> */}
                         </div>
 
-                        <div class="field">
+                        <div class="field-rs">
                             <h1> List Dokter </h1>
 
                             <div class="dr-grid">
@@ -108,12 +108,12 @@ export default function Rs({ rs, ListDokter = [] }) {
                 </div>
 
                 <div class="extra">
-                    <div class="suggestions">
+                    <div class="rs-suggestions">
                         <div class="judul-suggestions">
                             <h1> Rumah Sakit Lainnya </h1>
                         </div>
 
-                        <div class="suggestions-grid">
+                        <div class="rs-suggestions-grid">
                             {Otherrs.map((ors = {}) => {
                                 return (
                                     <div class="rs-cards">

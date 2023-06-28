@@ -4,7 +4,7 @@
     height: 100%;
 }
 
-.preview {
+.preview-rs {
     display: flex;
     gap: 3vw;
     padding-top: 10vh;
@@ -83,25 +83,25 @@
     background-color: #146C94;
 }
 
-.field {
+.field-rs {
     display: flex;
     flex-direction: column;
     gap: 0.8vh;
     width: 50vw;
 }
 
-.field h1 {
+.field-rs h1 {
     font-family: 'poppins-semi';
     font-size: 1.4rem;
     color: #146C94;
 }
 
-.field p {
+.field-rs p {
     font-family: 'poppins-regular';
     font-size: 1rem;
 }
 
-.field ul li {
+.field-rs ul li {
     font-family: 'poppins-regular';
     font-size: 1rem;
     margin-left: 1.1vw;
@@ -115,7 +115,7 @@
     margin-left: 3vw;
 }
 
-.suggestions {
+.rs-suggestions {
     display: flex;
     flex-direction: column;
     gap: 3vh;
@@ -127,7 +127,7 @@
     color: #146C94;
 }
 
-.suggestions-grid {
+.rs-suggestions-grid {
     display: grid;
     grid-template-columns: repeat(1,20vw);
     row-gap: 5vh;
