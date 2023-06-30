@@ -1,4 +1,7 @@
-# Getting Started with Create React App
+# Web Development Contest
+This was my first React project when I participated in a web development contest.
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
